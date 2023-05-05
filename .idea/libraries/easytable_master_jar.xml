@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="easytable_master_jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/easytable-master/out/artifacts/easytable_master_jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Program Files/easytable-master/out/artifacts/easytable_master_jar" recursive="false" />
+  </library>
+</component>

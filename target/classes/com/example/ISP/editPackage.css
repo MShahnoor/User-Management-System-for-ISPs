@@ -1,0 +1,65 @@
+#anchorPane{
+    -fx-background: #fff;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20 ;
+}
+#dialogPane{
+    -fx-background: #fff;
+    -fx-background-radius: 20 20 20 20;
+    -fx-border-radius: 20 20 20 20 ;
+}
+.combo-box{
+    -fx-border-color: white;
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+
+.text-field{
+    -fx-border-color: white;
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+.text-field:focused {
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+
+.text-field:empty .text {
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-letter-spacing: 0.04em;
+    -fx-line-height: 23px;
+    -fx-text-align: left;
+    -fx-color: #222;
+    -fx-opacity: 0.25;
+}
+
+.button{
+    -fx-background-color: #0E1A32;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+.button:hover{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #0E1A32;
+    -fx-border-width: 2.5;
+    -fx-text-fill: #0E1A32;
+}
+
+.button:pressed {
+    -fx-cursor:  CLOSED_HAND;
+}

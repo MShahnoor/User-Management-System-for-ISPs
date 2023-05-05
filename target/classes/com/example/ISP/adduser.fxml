@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane fx:id="dialogPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="496.0" stylesheets="@addpayment.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Add_User_Controller">
+    <header>
+        <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="496.0" stylesheets="@adduser.css">
+            <children>
+                <Text layoutX="147.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold;" text="Add User" AnchorPane.leftAnchor="191.0" AnchorPane.topAnchor="35.0" />
+                <Text fill="#222222" layoutX="50.0" layoutY="139.3447265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Area Code:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="120.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="First Name:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="181.0" />
+                <TextField fx:id="fNameField" layoutX="157.0" layoutY="176.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="176.0" />
+                <TextField fx:id="lNameField" layoutX="157.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="238.0" />
+                <TextField fx:id="contactField" layoutX="157.0" layoutY="304.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.bottomAnchor="314.0" AnchorPane.leftAnchor="157.0" />
+                <TextField fx:id="balanceField" layoutX="167.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.bottomAnchor="192.0" AnchorPane.leftAnchor="157.0" />
+                <TextField fx:id="houseNoTextField" layoutX="185.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="64.0" prefHeight="37.0" prefWidth="68.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="185.0" />
+                <Line endX="194.0" layoutX="244.0" layoutY="202.0" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="273.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Contact:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="303.0" />
+                <Line endX="194.0" layoutX="244.0" layoutY="293.0" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="334.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Package:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="365.0" />
+                <Line endX="194.0" layoutX="244.0" layoutY="374.0" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="396.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Address:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="487.0" />
+                <Line endX="-13.82843017578125" endY="-18.148284912109375" layoutX="267.2426452636719" layoutY="536.8554229736328" startX="-109.53553771972656" startY="-18.1483154296875" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="518.0" />
+                <Button fx:id="addUserButton" layoutX="176.0" layoutY="563.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#insertUser" prefHeight="40.0" prefWidth="150.0" style="-fx-font-family: Poppins; -fx-font-size: 20; -fx-border-radius: 8; -fx-background-radius: 5;" text="Add User" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="176.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets left="3.0" />
+                    </padding>
+                </Button>
+                <ComboBox fx:id="packageComboBox" layoutX="157.0" layoutY="368.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#getPackageName" prefHeight="35.0" prefWidth="294.0" promptText="Select Package" visibleRowCount="4" AnchorPane.bottomAnchor="253.0" AnchorPane.leftAnchor="157.0">
+                    <padding>
+                        <Insets bottom="-3.0" />
+                    </padding></ComboBox>
+                <Text fill="#222222" layoutX="35.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Last Name:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="242.0" />
+                <Line endX="194.0" layoutX="254.0" layoutY="212.0" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="212.0" />
+                <ComboBox fx:id="userIdAreaComboBox" layoutX="157.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#getAreaId" prefHeight="35.0" prefWidth="294.0" promptText="Select Area" visibleRowCount="4" AnchorPane.leftAnchor="157.0">
+                    <padding>
+                        <Insets bottom="-3.0" />
+                    </padding></ComboBox>
+                <Line endX="194.0" layoutX="218.0" layoutY="268.0" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="151.0" />
+                <Text fill="#222222" layoutX="50.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Balance:" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="426.0" />
+                <Line endX="194.0" layoutX="254.0" layoutY="450.0" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="457.0" />
+            <Text fill="#222222" layoutX="211.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.35;" text="User ID : " />
+            <ComboBox fx:id="userStreetComboBox" layoutX="258.0" layoutY="482.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#getStreetName" prefHeight="35.0" prefWidth="194.0" promptText="Select Street" visibleRowCount="4">
+               <padding>
+                  <Insets bottom="-3.0" />
+               </padding>
+            </ComboBox>
+            <Text fx:id="houseNo" fill="#222222" layoutX="157.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1;" text="H #" />
+            <Line endX="189.0" endY="-1.0" layoutX="262.0" layoutY="520.0" startX="4.0" startY="-1.0" stroke="#707070" style="-fx-opacity: 0.25;" />
+            <Text fx:id="userIDText" fill="#222222" layoutX="257.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 0.35; -fx-font-size: 12; -fx-font-family: Poppins;" wrappingWidth="28.708984375" />
+            </children>
+        </AnchorPane>
+    </header>
+</DialogPane>

@@ -1,0 +1,207 @@
+#rootAnchorPaneArea{
+    -fx-background: #FFF;
+}
+
+.text-field{
+    -fx-border-radius: 6px;
+    -fx-background: #FFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+.text-field:focused {
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+}
+.combo-box{
+    -fx-border-color: white;
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 14;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+
+.text-field:empty .text {
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-letter-spacing: 0.04em;
+    -fx-line-height: 23px;
+    -fx-text-align: left;
+    -fx-color: #222;
+    -fx-opacity: 0.3;
+}
+
+
+#streetNameTextField{
+    -fx-border-color: white;
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 14;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+#streetNameTextField:focused {
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 14;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+
+#streetNameTextField:empty .text {
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-letter-spacing: 0.04em;
+    -fx-line-height: 23px;
+    -fx-text-align: left;
+    -fx-color: #222;
+    -fx-opacity: 0.25;
+}
+.button:pressed {
+    -fx-cursor:  CLOSED_HAND;
+}
+
+#editAreaBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+#editAreaBtn{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #222222;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+
+#addAreaBtn{
+    -fx-background-color: #FBFBFB;
+    -fx-opacity: 0.95;
+    -fx-text-fill: #0E1A32;
+    -fx-font-weight: bold;
+    -fx-text-font-family: Poppins;
+}
+
+#addStreetButton{
+    -fx-background-color: #FBFBFB;
+    -fx-opacity: 0.95;
+    -fx-text-fill: #0E1A32;
+    -fx-font-weight: bold;
+    -fx-text-font-family: Poppins;
+}
+
+#addAreaBtn:hover{
+    -fx-background-color: #0E1A32;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-font-family: Poppins;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+#addStreetButton:hover{
+    -fx-background-color: #0E1A32;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-font-family: Poppins;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+#addStreetButto:pressed{
+    -fx-cursor:  CLOSED_HAND;
+}
+
+#addAreaBtn:pressed{
+    -fx-cursor:  CLOSED_HAND;
+}
+
+#paymentDetailsTableBtn{
+    -fx-background-color: #FFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+#paymentDetailsTableBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+#deleteTableBtn{
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#deleteTableBtn:hover{
+    -fx-background-color: #FFF;
+    -fx-text-fill: #FF0000;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+
+.table-view{
+    -fx-background-color: #FFF;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: #FFF;
+}
+.table-view .corner {
+    -fx-background-color: #FFF;
+}
+
+.table-view .column-header{
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5px;
+    -fx-font-family: Poppins;
+    -fx-font-size: 16;
+
+}
+
+.table-view .table-column{
+    /*-fx-padding: 10px 0px 0px 0px;*/
+
+}
+
+.table-view .column-header .text{
+    -fx-opacity: 0.35;
+    -fx-text-alignment: left;
+    -fx-margin-insets: 10px;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell {
+
+}
+#userIDCol .text{
+    -fx-font-family: Poppins;
+    -fx-font-size: 17px;
+    -fx-opacity: 0.5;
+    -fx-alignment: CENTER-LEFT;
+}
+#userNameCol .text{
+    -fx-font-family: Poppins;
+    -fx-font-size: 17px;
+    -fx-opacity: 1;
+}
+
+#userBalanceCol .text{
+    -fx-font-family: Poppins;
+    -fx-font-size: 17px;
+    -fx-opacity: 0.5;
+}
+#userStatusCol .text{
+    -fx-font-family: Poppins;
+    -fx-font-size: 17px;
+    -fx-opacity: 0.5;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-body-color: #7c7f81;
+    -fx-background-color: #898a8d;
+    -fx-text-fill: white;
+}

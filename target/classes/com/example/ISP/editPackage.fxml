@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane fx:id="dialogPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="483.0" stylesheets="@addpayment.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Edit_Package_Controller">
+    <header>
+        <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="483.0" stylesheets="@adduser.css">
+            <children>
+                <Text layoutX="147.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Edit Package Info" AnchorPane.leftAnchor="137.0" AnchorPane.topAnchor="35.0" />
+                <Text fill="#222222" layoutX="50.0" layoutY="146.265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Name:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="129.0" />
+                <TextField fx:id="editNameField" layoutX="150.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="126.0" />
+            <TextField fx:id="editSpeedField" layoutX="149.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" />
+                <TextField fx:id="editFeeField" layoutX="150.0" layoutY="256.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="150.0" />
+                <Line endX="194.0" layoutX="250.5" layoutY="160.5" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="160.0" />
+                <Text fill="#222222" layoutX="50.0" layoutY="212.265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="MB/s" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="195.0" />
+                <Line endX="194.0" layoutX="250.5" layoutY="226.5" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="226.0" />
+                <Text fill="#222222" layoutX="50.0" layoutY="278.265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Fee:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="261.0" />
+                <Line endX="194.0" layoutX="250.5" layoutY="292.5" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="292.0" />
+                <Button fx:id="editConfirmButton" layoutX="172.0" layoutY="321.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#performPackageEdit" prefHeight="40.0" prefWidth="143.0" style="-fx-font-family: Poppins; -fx-font-size: 20; -fx-border-radius: 8; -fx-background-radius: 10;" text="Confirm" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="172.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="1.0" left="3.0" />
+                    </padding>
+                </Button>
+                <Text fill="#222222" layoutX="193.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.35;" text="Package ID:  " AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="76.0" />
+            <Text fx:id="packageIdText" fill="#222222" layoutX="261.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.35;" text="A124" />
+            </children>
+        </AnchorPane>
+    </header>
+</DialogPane>

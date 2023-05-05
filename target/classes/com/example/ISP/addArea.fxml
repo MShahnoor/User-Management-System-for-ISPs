@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane fx:id="dialogPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="496.0" stylesheets="@addpayment.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Add_Area_Controller">
+    <header>
+        <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="496.0" stylesheets="@addPackage.css">
+            <children>
+                <Text layoutX="188.0" layoutY="60.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Add Area" AnchorPane.leftAnchor="188.0" AnchorPane.topAnchor="34.0" />
+                <Text fill="#222222" layoutX="43.0" layoutY="137.265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Area ID:" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="120.0" />
+                <TextField fx:id="areaIdField" layoutX="160.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="160.0" />
+                <Line endX="194.0" layoutX="260.5" layoutY="151.5" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="151.0" />
+                <Text fill="#222222" layoutX="43.0" layoutY="203.265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Area Name:" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="186.0" />
+                <TextField fx:id="areaNameField" layoutX="160.0" layoutY="182.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="23.0" minWidth="294.0" prefHeight="35.0" prefWidth="294.0" style="-fx-font-size: 15;" stylesheets="@addpayment.css" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="160.0" />
+                <Line endX="194.0" layoutX="260.5" layoutY="217.5" startX="-100.0" stroke="#707070" style="-fx-opacity: 0.25;" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="217.0" />
+                <Button fx:id="addAreaButton" layoutX="160.0" layoutY="261.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#insertArea" prefHeight="40.0" prefWidth="197.0" style="-fx-font-family: Poppins; -fx-font-size: 20; -fx-border-radius: 8; -fx-background-radius: 10;" text="Confirm" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="160.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="1.0" left="3.0" />
+                    </padding>
+                </Button>
+            <Text fill="#222222" layoutX="181.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.35;" text="Add a new service area" />
+            </children>
+        </AnchorPane>
+    </header>
+</DialogPane>

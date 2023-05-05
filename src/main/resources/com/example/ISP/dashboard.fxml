@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="1156.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Dashboard_Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee40" height="693.0" layoutX="478.0" layoutY="105.0" stroke="#eeeeee" strokeType="INSIDE" style="-fx-opacity: 0.25;" width="660.0" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="0.0" />
+      <Line endX="693.0" layoutX="-107.0" layoutY="346.0" rotate="90.0" style="-fx-opacity: 0.3;" styleClass="home.css" AnchorPane.leftAnchor="-149.5" />
+
+      <Button fx:id="homeButton" layoutX="52.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToHome" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: #0059E7; -fx-font-size: 18; -fx-opacity: 0.05;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="112.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <padding>
+            <Insets left="-25.0" />
+         </padding>
+      </Button>
+      <ImageView fitHeight="36.0" fitWidth="60.0" layoutX="50.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" styleClass="home.css" AnchorPane.leftAnchor="68.0" AnchorPane.topAnchor="30.0">
+         <image>
+            <Image url="@logo2.png" />
+         </image></ImageView>
+
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0059e7" height="45.0" layoutY="122.0" stroke="#0059e7" strokeType="INSIDE" width="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="112.0" />
+      <ImageView fx:id="homeIconButton" accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="42.0" layoutY="128.0" onMousePressed="#switchToHomeMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="124.0">
+         <image>
+            <Image url="@homeBlue.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="paymentsButton" layoutY="176.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToPayments" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 13;" stylesheets="@home.css" textFill="#222222" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="167.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <padding>
+            <Insets left="3.0" />
+         </padding>
+      </Button>
+      <Button fx:id="usersButton" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToUsers" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="221.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <padding>
+            <Insets left="-30.0" />
+         </padding>
+      </Button>
+      <Button fx:id="packageButton" layoutY="288.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToPackages" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="275.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets left="-1.0" />
+         </opaqueInsets>
+      </Button>
+      <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="42.0" layoutY="183.0" onMousePressed="#switchToPaymentsMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="179.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <image>
+            <Image url="@payments.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="42.0" layoutY="243.0" onMousePressed="#switchToUsersMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="233.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="42.0" layoutY="279.0" onMousePressed="#switchToPackagesMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="289.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <image>
+            <Image url="@package.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="429.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="386.0" promptText="Search" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="40.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Text layoutX="489.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Dashboard" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="119.0" />
+      <Text fill="#222222" layoutX="349.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.6;" text="Welcome Back!" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="163.0" />
+      <Rectangle fx:id="statsRec1" arcHeight="5.0" arcWidth="5.0" fill="#0059e7" height="178.0" layoutX="349.0" layoutY="256.0" stroke="#707070" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="0.3" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="580.0" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="201.0" />
+      <Text fx:id="currentMonthRevenueText" fill="WHITE" layoutX="419.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 28; -fx-font-weight: bold; -fx-opacity: 1;" text="150k" AnchorPane.leftAnchor="271.0" AnchorPane.topAnchor="267.0" />
+      <Rectangle fx:id="statsRec11" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="294.0" layoutY="443.0" stroke="#70707080" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="0.3" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="183.0" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="399.0" />
+      <Text fx:id="firstPackageNameText" layoutX="307.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Three_Hundred" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="491.0" />
+      <Text fill="#222222" layoutX="306.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.7;" text="Most Popular" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="458.0" />
+      <Text fx:id="activeUsersFirstPackageText" layoutX="576.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: bold; -fx-font-size: 26; -fx-opacity: 0.9;" text="1269" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="582.0" />
+      <Text fill="#222222" layoutX="575.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.4; -fx-font-weight: bold;" text="Active Users:" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="557.0" />
+      <Line endX="125.0" layoutX="-67.0" layoutY="356.0" stroke="#707070" style="-fx-opacity: 0.2;" styleClass="home.css" AnchorPane.leftAnchor="256.0" AnchorPane.topAnchor="542.0" />
+      <Rectangle fx:id="statsRec111" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="442.0" layoutY="396.0" stroke="#6e6e6e80" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="0.3" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="183.0" AnchorPane.leftAnchor="434.5" AnchorPane.topAnchor="399.0" />
+      <Text fx:id="secondPackageNameText" layoutX="466.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Three_fifty" AnchorPane.leftAnchor="457.5" AnchorPane.topAnchor="491.0" />
+      <Text fill="#222222" layoutX="466.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.7;" text="Trending" AnchorPane.leftAnchor="457.5" AnchorPane.topAnchor="458.0" />
+      <Text fx:id="secondPackageSpeedText" layoutX="466.0" layoutY="435.3447265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Package 2" AnchorPane.leftAnchor="457.5" AnchorPane.topAnchor="429.0" />
+      <Text fx:id="activeUsersSecondPackageText" layoutX="466.0" layoutY="608.9775390625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: bold; -fx-font-size: 25; -fx-opacity: 0.9;" text="456" AnchorPane.leftAnchor="457.5" AnchorPane.topAnchor="582.0" />
+      <Text fill="#222222" layoutX="466.0" layoutY="567.94921875" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.4; -fx-font-weight: bold;" text="Active Users:" AnchorPane.leftAnchor="457.5" AnchorPane.topAnchor="557.0" />
+      <Line endX="125.0" layoutX="463.5" layoutY="536.5" stroke="#707070" style="-fx-opacity: 0.2;" styleClass="home.css" AnchorPane.leftAnchor="454.5" AnchorPane.topAnchor="542.0" />
+      <Rectangle fx:id="statsRec1111" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="244.0" layoutX="654.0" layoutY="399.0" stroke="#6e6e6e80" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="0.3" style="-fx-arc-width: 50; -fx-arc-height: 50;" width="183.0" AnchorPane.leftAnchor="633.0" AnchorPane.topAnchor="399.0" />
+      <Text fx:id="thirdPackageNameText" layoutX="674.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Two_Fif" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="491.0" />
+      <Text fill="#222222" layoutX="702.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.7;" text="Moderate" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="458.0" />
+      <Text fx:id="thirdPackageSpeedText" layoutX="671.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Package 3" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="429.0" />
+      <Text fx:id="activeUsersThirdPackageText" layoutX="1017.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-weight: bold; -fx-font-size: 25; -fx-opacity: 0.9;" text="126" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="582.0" />
+      <Text fill="#222222" layoutX="701.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.4; -fx-font-weight: bold;" text="Active Users:" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="557.0" />
+      <Line endX="125.0" layoutX="293.0" layoutY="312.0" stroke="#707070" style="-fx-opacity: 0.2;" styleClass="home.css" AnchorPane.leftAnchor="651.0" AnchorPane.topAnchor="542.0" />
+      <Rectangle fx:id="statsRec11111" arcHeight="5.0" arcWidth="5.0" fill="#0e1a32" height="693.0" layoutX="868.0" layoutY="326.0" stroke="#707070" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="0.3" width="300.0" AnchorPane.leftAnchor="856.0" AnchorPane.topAnchor="0.0" />
+      <Text fill="WHITE" layoutX="909.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold;" text="Sales Revenue" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="50.0" />
+      <Text fx:id="yearlyRevenueText" fill="WHITE" layoutX="934.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 28; -fx-font-weight: bold;" text="120k" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="147.0" />
+      <Text fill="WHITE" layoutX="951.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Revenue" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="120.0" />
+      <Line endX="220.0" fill="WHITE" layoutX="303.0" layoutY="322.0" stroke="WHITE" style="-fx-opacity: 0.2;" styleClass="home.css" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="379.0" />
+      <Button fx:id="areasButton" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToAreas" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="330.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <padding>
+            <Insets left="-25.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets left="-1.0" />
+         </opaqueInsets>
+      </Button>
+      <ImageView accessibleRole="BUTTON" fitHeight="23.0" fitWidth="23.0" layoutX="41.0" layoutY="358.0" onMousePressed="#switchToAreasMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="342.0">
+         <image>
+            <Image url="@areas.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="#0059e7" layoutX="80.0" layoutY="151.107421875" onMousePressed="#switchToHomeMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Home" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="124.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fill="#222222" layoutX="80.0" layoutY="210.0" onMousePressed="#switchToPaymentsMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Payments" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="180.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fill="#222222" layoutX="90.0" layoutY="220.0" onMousePressed="#switchToUsersMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Users" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="234.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fill="#222222" layoutX="100.0" layoutY="230.0" onMousePressed="#switchToPackagesMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Packages" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="288.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fill="#222222" layoutX="110.0" layoutY="240.0" onMouseClicked="#switchToAreasMouse" onMousePressed="#switchToAreasMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Areas" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="343.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fill="WHITE" layoutX="963.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Current Year" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="196.0" />
+      <Text fill="WHITE" layoutX="961.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Customers" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="262.0" />
+      <Text fill="WHITE" layoutX="943.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Total Active Customers" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="338.0" />
+      <Text fx:id="activeCustomersText" fill="WHITE" layoutX="944.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 28; -fx-font-weight: bold;" text="1346" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="289.0" />
+      <Text fill="WHITE" layoutX="909.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="In-Active Users" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="404.0" />
+      <Text fill="WHITE" layoutX="953.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Total in-Active Customers" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="480.0" />
+      <Text fx:id="totalInactiveUsersText" fill="WHITE" layoutX="912.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 28; -fx-font-weight: bold;" text="130" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="431.0" />
+      <Line endX="220.0" fill="WHITE" layoutX="313.0" layoutY="332.0" stroke="WHITE" style="-fx-opacity: 0.2;" styleClass="home.css" AnchorPane.leftAnchor="896.0" AnchorPane.topAnchor="237.0" />
+      <Text fill="WHITE" layoutX="322.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Revenue" AnchorPane.leftAnchor="271.0" AnchorPane.topAnchor="235.0" />
+      <Text fill="WHITE" layoutX="320.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Current Month" AnchorPane.leftAnchor="271.0" AnchorPane.topAnchor="316.0" />
+      <Text fill="WHITE" layoutX="332.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Fees Paid" AnchorPane.leftAnchor="449.0" AnchorPane.topAnchor="235.0" />
+      <Text fx:id="paidUsersText" fill="WHITE" layoutX="429.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 28; -fx-font-weight: bold; -fx-opacity: 1;" text="5002" AnchorPane.leftAnchor="449.0" AnchorPane.topAnchor="267.0" />
+      <Text fill="WHITE" layoutX="330.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Users who have paid" AnchorPane.leftAnchor="449.0" AnchorPane.topAnchor="316.0" />
+      <Text fill="WHITE" layoutX="342.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Fees Pending" AnchorPane.leftAnchor="642.0" AnchorPane.topAnchor="235.0" />
+      <Text fx:id="pendingUsersText" fill="WHITE" layoutX="439.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 28; -fx-font-weight: bold; -fx-opacity: 1;" text="120" AnchorPane.leftAnchor="642.0" AnchorPane.topAnchor="267.0" />
+      <Text fill="WHITE" layoutX="340.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.75; -fx-font-weight: bold;" text="Users who haven’t paid" AnchorPane.leftAnchor="642.0" AnchorPane.topAnchor="316.0" />
+      <Line endX="118.52328491210938" endY="0.6870127320289612" layoutX="318.0" layoutY="291.0" rotate="90.0" stroke="WHITE" style="-fx-opacity: 0.15;" styleClass="home.css" AnchorPane.leftAnchor="356.0" AnchorPane.topAnchor="290.29289323091507" />
+      <Line endX="118.52328491210938" endY="0.6870127320289612" layoutX="531.0" layoutY="287.0" rotate="90.0" stroke="WHITE" style="-fx-opacity: 0.15;" styleClass="home.css" AnchorPane.leftAnchor="548.2928932309151" />
+      <Button fx:id="areasButton1" layoutX="10.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToReports" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18; -fx-opacity: 0.05;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="384.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <padding>
+            <Insets left="-25.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets left="-1.0" />
+         </opaqueInsets>
+      </Button>
+      <Text fill="#222222" layoutX="94.0" layoutY="424.0" onMousePressed="#switchToReportsMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Reports" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="397.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <ImageView accessibleRole="BUTTON" fitHeight="17.0" fitWidth="17.0" layoutX="48.0" layoutY="408.0" onMousePressed="#switchToReportsMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="398.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <image>
+            <Image url="@pdfs.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="secondPackageSpeedText1" layoutX="307.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Package 1" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="429.0" />
+      <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="45.0" layoutY="451.0" onMouseClicked="#switchToEmployee" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="451.0">
+         <image>
+            <Image url="@employee.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="83.0" layoutY="476.0" onMouseClicked="#switchToEmployee" onMousePressed="#switchToEmployee" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Employee" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="450.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane fx:id="dialogPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="483.0" stylesheets="@addpayment.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.User_Details_Controller">
+    <header>
+        <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="483.0" stylesheets="@userDetails.css">
+            <children>
+                <Text layoutX="147.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold; -fx-opacity: 0.9;" text="User Details" AnchorPane.leftAnchor="171.0" AnchorPane.topAnchor="35.0" />
+                <Text fill="#222222" layoutX="20.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Name:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="139.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Contact:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="188.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Package:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="237.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Balance:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="286.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Status:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="335.0" />
+            <Text fill="#222222" layoutX="50.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Address:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="384.0" />
+            <Text fill="#222222" layoutX="53.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 0.5;" text="ID: " AnchorPane.leftAnchor="214.0" AnchorPane.topAnchor="80.0" />
+            <Text fx:id="nameText" fill="#222222" layoutX="115.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="Muhamad Shahnoor" AnchorPane.leftAnchor="152.0" AnchorPane.topAnchor="139.0" />
+            <Text fx:id="contactText" fill="#222222" layoutX="141.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="0321-8545526" AnchorPane.leftAnchor="152.0" AnchorPane.topAnchor="188.0" />
+            <Text fx:id="packageNameText" fill="#222222" layoutX="152.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="Basic" AnchorPane.leftAnchor="152.0" AnchorPane.topAnchor="237.0" />
+            <Text fx:id="balanceText" fill="#222222" layoutX="161.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="10 Rs" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="286.0" />
+            <Text fx:id="statusText" fill="#222222" layoutX="171.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="10 Rs" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="335.0" />
+            <Text fx:id="addressText" fill="#222222" layoutX="181.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="Mai di chuggi" wrappingWidth="314.70556640625" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="384.0" />
+            <Text fx:id="idText" fill="#222222" layoutX="240.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 0.5;" text="A124" AnchorPane.topAnchor="80.0" />
+            </children>
+        </AnchorPane>
+    </header>
+</DialogPane>

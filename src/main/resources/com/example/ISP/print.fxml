@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Reports_Controller">
+   <children>
+      <Button fx:id="unpaidUsersButton" layoutX="24.0" layoutY="94.0" mnemonicParsing="false" onAction="#PDFUnpaidUsers" prefHeight="34.0" prefWidth="91.0" text="Unpaid Users" />
+      <Text layoutX="24.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genrate PDFs" wrappingWidth="319.13671875">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="155.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Fee current month" />
+      <Line endX="-2.0" endY="-9.0" layoutX="139.0" layoutY="133.0" startX="-2.0" startY="-29.0" />
+      <Button fx:id="MELButton" layoutX="24.0" layoutY="137.0" mnemonicParsing="false" onAction="#PDFMonthlyEvaluationList" prefHeight="34.0" prefWidth="91.0" text="M.E.L" />
+      <Line endX="-2.0" endY="-9.0" layoutX="139.0" layoutY="173.0" startX="-2.0" startY="-29.0" />
+      <Text layoutX="155.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Evaluation List" />
+      <Button fx:id="defalutersButton" layoutX="24.0" layoutY="183.0" mnemonicParsing="false" onAction="#PDFDefaulters" prefHeight="34.0" prefWidth="91.0" text="Defaulters" />
+      <Line endX="-2.0" endY="-9.0" layoutX="139.0" layoutY="219.0" startX="-2.0" startY="-29.0" />
+      <Text layoutX="155.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users with 2+ months pending fee" />
+      <Button fx:id="activeUsersButton" layoutX="24.0" layoutY="230.0" mnemonicParsing="false" onAction="#PDFActiveUsers" prefHeight="34.0" prefWidth="91.0" text="Active Users" />
+      <Line endX="-2.0" endY="-9.0" layoutX="139.0" layoutY="266.0" startX="-2.0" startY="-29.0" />
+      <Text layoutX="155.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Active Users" />
+      <Button fx:id="inActiveUsersButton" layoutX="24.0" layoutY="282.0" mnemonicParsing="false" onAction="#PDFInActiveUsers" prefHeight="34.0" prefWidth="91.0" text="InActive Users" />
+      <Line endX="-2.0" endY="-9.0" layoutX="139.0" layoutY="318.0" startX="-2.0" startY="-29.0" />
+      <Text layoutX="155.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total InActive Users" />
+      <Text layoutX="325.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Correct system date\time before genrating PDFs" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+#anchorPane{
+    -fx-background: #FFF;
+}
+
+.text-field{
+    -fx-border-radius: 6px;
+    -fx-background: #FFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+.text-field:focused {
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+}
+
+.text-field:empty .text {
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-letter-spacing: 0.04em;
+    -fx-line-height: 23px;
+    -fx-text-align: left;
+    -fx-color: #222;
+    -fx-opacity: 0.3;
+}
+
+
+
+.button:pressed {
+    -fx-cursor:  CLOSED_HAND;
+}
+

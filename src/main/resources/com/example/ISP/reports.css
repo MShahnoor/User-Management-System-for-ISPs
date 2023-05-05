@@ -1,0 +1,143 @@
+#rootAnchorPaneReports{
+    -fx-background: #FFF;
+}
+
+.text-field{
+    -fx-border-radius: 6px;
+    -fx-background: #EEEEEE;
+    -fx-background-color: #EEEEEE;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+.text-field:focused {
+    -fx-background-color: #EEEEEE;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 15, 0, 0, 0);
+}
+
+
+.text-field:empty .text {
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-letter-spacing: 0.04em;
+    -fx-line-height: 23px;
+    -fx-text-align: left;
+    -fx-color: #222;
+    -fx-opacity: 0.3;
+}
+
+
+#streetNameTextField{
+    -fx-border-color: white;
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 14;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+#streetNameTextField:focused {
+    -fx-background-color: white , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 14;
+    -fx-opacity: 60;
+    -fx-border-color: white;
+}
+
+#streetNameTextField:empty .text {
+    -fx-font-family: Poppins;
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-letter-spacing: 0.04em;
+    -fx-line-height: 23px;
+    -fx-text-align: left;
+    -fx-color: #222;
+    -fx-opacity: 0.25;
+}
+.button:pressed {
+    -fx-cursor:  CLOSED_HAND;
+}
+
+#defaultersButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 15, 0, 0, 0);
+}
+
+#defaultersButton{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #222222;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#inActiveUsersButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 15, 0, 0, 0);
+}
+
+#inActiveUsersButton{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #222222;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#activeUsersButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 15, 0, 0, 0);
+}
+
+#activeUsersButton{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #222222;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#unpaidUsersButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 15, 0, 0, 0);
+}
+
+#unpaidUsersButton{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #222222;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+#printButton{
+    -fx-background-color: #185ADB;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#printButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 20, 0, 0, 0);
+}
+
+#melButton{
+    -fx-background-color: #185ADB;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#melButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 20, 0, 0, 0);
+}
+
+#defaultersUnpaidMonthsButton{
+    -fx-background-color: #185ADB;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#defaultersUnpaidMonthsButton:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 20, 0, 0, 0);
+}
+
+.combo-box{
+    -fx-border-color: #EEEEEE;
+    -fx-background-color: #EEEEEE , #EEEEEE , #EEEEEE;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-family: Poppins;
+    -fx-font-size: 17;
+    -fx-opacity: 60;
+    -fx-border-color:  #EEEEEE;
+}

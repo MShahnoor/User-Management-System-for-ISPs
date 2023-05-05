@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane fx:id="dialogPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="483.0" stylesheets="@addpayment.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Payment_Details_Controller">
+    <header>
+        <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="483.0" stylesheets="@paymentDetails.css">
+            <children>
+                <Text layoutX="147.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 25; -fx-font-weight: bold; -fx-opacity: 0.9;" text="Payment Details" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="35.0" />
+                <Text fill="#222222" layoutX="20.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="User ID:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="199.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Name:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="248.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Package:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="297.0" />
+                <Text fill="#222222" layoutX="40.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Received:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="346.0" />
+                <Text fill="#222222" layoutX="200.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.35;" text="Payment ID:" AnchorPane.leftAnchor="188.0" AnchorPane.topAnchor="77.0" />
+                <Text fx:id="userNameText" fill="#222222" layoutX="175.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="Muhamad Shahnoor" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="247.6552734375" />
+                <Text fx:id="userIdText" fill="#222222" layoutX="175.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="P-012" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="198.6552734375" />
+                <Text fx:id="packageText" fill="#222222" layoutX="175.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="Basic" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="296.6552734375" />
+                <Text fx:id="amountRecievedText" fill="#222222" layoutX="176.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="10 Rs" AnchorPane.leftAnchor="176.0" AnchorPane.topAnchor="345.6552734375" />
+            <Text fx:id="dateText" fill="#222222" layoutX="175.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17;" text="10-12-14" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="149.6552734375" />
+            <Text fill="#222222" layoutX="30.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Date:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="150.0" />
+            <Text fx:id="paymentIdText" fill="#222222" layoutX="254.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 12; -fx-opacity: 0.35;" text="A124" AnchorPane.topAnchor="77.0" />
+            <Text fill="#222222" layoutX="50.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-opacity: 1; -fx-font-weight: bold;" text="Received By:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="395.0" />
+            <Text fx:id="receivedByText" fill="#222222" layoutX="176.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 17; -fx-opacity: 1;" text="10 Rs" AnchorPane.leftAnchor="176.0" AnchorPane.topAnchor="394.6552734375" />
+            </children>
+        </AnchorPane>
+    </header>
+</DialogPane>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootAnchorPaneArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="1156.0" stylesheets="@employee.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ISP.Employee_Controller">
+    <children>
+        <TextField fx:id="searchField" layoutX="236.0" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="442.0" promptText="Search" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="46.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </TextField>
+        <TableView fx:id="areaTable" layoutX="237.0" layoutY="216.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="880.0" AnchorPane.leftAnchor="237.0" AnchorPane.topAnchor="216.0">
+            <columns>
+                <TableColumn fx:id="empNameCol" maxWidth="1.7976931348623157E308" minWidth="144.0" prefWidth="723.0" />
+                <TableColumn fx:id="receivedCol" maxWidth="1.7976931348623157E308" minWidth="153.0" prefWidth="156.0" />
+            </columns>
+        </TableView>
+        <Text fill="#222222" layoutX="290.0" layoutY="242.265625" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-font-weight: bold; -fx-opacity: 0.75;" text="Name" AnchorPane.bottomAnchor="446.71875" AnchorPane.leftAnchor="251.0" AnchorPane.topAnchor="225.0" />
+        <Text fill="#222222" layoutX="738.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 16; -fx-font-weight: bold; -fx-opacity: 0.75;" text="Received this month" AnchorPane.leftAnchor="913.0" AnchorPane.topAnchor="225.0" />
+        <Line endX="693.0" layoutX="-77.0" layoutY="346.0" rotate="90.0" style="-fx-opacity: 0.3;" styleClass="home.css" AnchorPane.leftAnchor="-150.5" />
+        <Button fx:id="homeButton" layoutX="10.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToHome" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18; -fx-opacity: 0.05;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="112.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <padding>
+                <Insets left="-30.0" />
+            </padding>
+        </Button>
+        <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="94.0" layoutY="282.0" onMousePressed="#switchToHomeMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="124.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+                <Image url="@home.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="paymentsButton1" layoutX="10.0" layoutY="186.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToPayments" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 13;" stylesheets="@home.css" textFill="#222222" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="167.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <padding>
+                <Insets left="3.0" />
+            </padding>
+        </Button>
+        <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="52.0" layoutY="193.0" onMousePressed="#switchToPaymentsMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="179.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+                <Image url="@payments.png" />
+            </image>
+        </ImageView>
+        <Text fill="#222222" layoutX="90.0" layoutY="220.0" onMousePressed="#switchToPaymentsMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Payments" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="180.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Text>
+        <Button fx:id="homeButton2" layoutX="10.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToUsers" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="221.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <padding>
+                <Insets left="-30.0" />
+            </padding>
+        </Button>
+        <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="52.0" layoutY="253.0" onMousePressed="#switchToUsersMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="233.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+                <Image url="@user.png" />
+            </image>
+        </ImageView>
+        <Text fill="#222222" layoutX="100.0" layoutY="230.0" onMousePressed="#switchToUsersMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Users" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="234.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Text>
+        <Button fx:id="homeButton11" layoutX="10.0" layoutY="298.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToPackages" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="275.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <opaqueInsets>
+                <Insets left="-1.0" />
+            </opaqueInsets>
+        </Button>
+        <Text fill="#222222" layoutX="110.0" layoutY="240.0" onMousePressed="#switchToPackagesMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Packages" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="288.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Text>
+        <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="52.0" layoutY="289.0" onMousePressed="#switchToPackagesMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="289.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+                <Image url="@package.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="areasButton" layoutY="439.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToAreas" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: #0059E7; -fx-font-size: 18; -fx-opacity: 0.05;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="439.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <padding>
+                <Insets left="-25.0" />
+            </padding>
+            <opaqueInsets>
+                <Insets left="-1.0" />
+            </opaqueInsets>
+        </Button>
+        <ImageView accessibleRole="BUTTON" fitHeight="23.0" fitWidth="23.0" layoutX="51.0" layoutY="368.0" onMousePressed="#switchToAreasMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="342.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+                <Image url="@areas.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="120.0" layoutY="250.0" onMousePressed="#switchToAreasMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Areas" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="343.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0059e7" height="45.0" layoutY="439.0" stroke="#0059e7" strokeType="INSIDE" width="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="439.0" />
+        <Button fx:id="addEmpBtn" layoutX="461.0" layoutY="357.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchAddEmployee" prefHeight="40.0" prefWidth="149.0" style="-fx-font-family: Poppins; -fx-font-size: 15; -fx-border-radius: 8; -fx-background-radius: 10; -fx-border-color: #0E1A32; -fx-border-width: 2.5;" text="+ Add Employee" AnchorPane.leftAnchor="962.0" AnchorPane.topAnchor="40.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <padding>
+                <Insets bottom="1.0" left="-2.0" />
+            </padding>
+        </Button>
+        <Button fx:id="deleteEmpBtn" layoutX="795.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="111.0" style="-fx-font-family: Poppins; -fx-font-size: 20; -fx-border-radius: 8; -fx-background-radius: 10;" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="873.0" AnchorPane.topAnchor="125.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <padding>
+                <Insets bottom="1.0" left="3.0" />
+            </padding>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="editEmpBtn" layoutX="956.0" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="115.0" style="-fx-font-family: Poppins; -fx-font-size: 20; -fx-border-radius: 8; -fx-background-radius: 10;" text="Edit" AnchorPane.leftAnchor="996.0" AnchorPane.topAnchor="125.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <padding>
+                <Insets bottom="1.0" left="3.0" />
+            </padding>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Button>
+        <Line endX="880.0" endY="0.6870127320289612" layoutX="358.0" layoutY="331.0" style="-fx-opacity: 0.05;" styleClass="home.css" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="190.0" />
+        <Text fill="#222222" layoutX="130.0" layoutY="260.0" onMousePressed="#switchToHomeMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Home" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="124.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Text>
+        <ImageView fitHeight="36.0" fitWidth="60.0" layoutX="60.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="home.css" AnchorPane.leftAnchor="68.0" AnchorPane.topAnchor="30.0">
+            <image>
+                <Image url="@logo2.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="areasButton1" layoutX="2.0" layoutY="438.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToReports" prefHeight="45.0" prefWidth="196.0" style="-fx-background-color: white; -fx-font-size: 18; -fx-opacity: 0.05;" stylesheets="@home.css" textFill="#0059e7" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="438.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <padding>
+                <Insets left="-25.0" />
+            </padding>
+            <opaqueInsets>
+                <Insets left="-1.0" />
+            </opaqueInsets>
+        </Button>
+        <Text fill="#222222" layoutX="104.0" layoutY="434.0" onMousePressed="#switchToReportsMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Reports" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="397.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </Text>
+        <ImageView accessibleRole="BUTTON" fitHeight="17.0" fitWidth="17.0" layoutX="58.0" layoutY="418.0" onMousePressed="#switchToReportsMouse" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="398.0">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+                <Image url="@pdfs.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="23.0" layoutX="35.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="453.0">
+         <image>
+            <Image url="@employeeBlue.png" />
+         </image>
+      </ImageView>
+      <Text fill="#0059e7" layoutX="73.0" layoutY="466.0" onMousePressed="#switchToReportsMouse" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins; -fx-font-size: 14; -fx-opacity: 1; -fx-font-weight: bold;" text="Employee" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="451.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+    </children>
+</AnchorPane>
